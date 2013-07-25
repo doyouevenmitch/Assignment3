@@ -4,14 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     
-<Button android:text="@string/addNote" android:id="@+id/addButton"
+    <Button android:text="@string/addNote" android:id="@+id/addButton"
 		android:drawableLeft="@drawable/add" android:textSize="20sp"
 		android:layout_width="fill_parent" android:layout_height="wrap_content">
-</Button>
-   
-    
-    
-    
-    
-    
+    </Button>
+
+    <ScrollView
+            android:id="@+id/listNotes"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+        <TableLayout android:id="@+id/notesList"
+                     xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:orientation="vertical" android:layout_width="fill_parent"
+                     android:layout_height="wrap_content" android:stretchColumns="0"
+                     android:padding="3dip">
+
+
+
+        </TableLayout>
+    </ScrollView>
+
 </LinearLayout>
+
+

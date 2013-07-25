@@ -4,10 +4,10 @@ public class ContentHandler {
 	
 	//private variables
 	int _id;
-	String _title;
-	String _content;
-	String _created;
-	String _modified;
+	private String _title;
+    private String _content;
+    private String _created;
+    private String _modified;
 	
 	// Empty constructor
 	public ContentHandler(){
