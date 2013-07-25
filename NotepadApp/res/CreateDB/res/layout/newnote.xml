@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/b">
+ 
+    <AbsoluteLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+ 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="12dp"
+        android:layout_y="10dp"
+        android:onClick="createDB"
+        android:text="CreateDB and Table" />
+ 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="17dp"
+        android:layout_y="100dp"
+        android:text="Name"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_x="13dp"
+        android:layout_y="129dp"
+        android:ems="10" />
+ 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="187dp"
+        android:text="Age"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_x="167dp"
+        android:layout_y="10dp"
+        android:onClick="drop"
+        android:text="DropDB" />
+ 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="357dp"
+        android:onClick="viewData"
+        android:text="View Data" />
+ 
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_x="15dp"
+        android:layout_y="215dp"
+        android:ems="10"
+        android:inputType="number" />
+ 
+ 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="188dp"
+        android:layout_y="214dp"
+        android:onClick="addData"
+        android:text="Save Data" />
+ 
+    </AbsoluteLayout>
+ 
+</RelativeLayout>
