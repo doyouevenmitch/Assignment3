@@ -3,9 +3,9 @@ package com.app.notepadapp;
 public class ContentHandler {
 	
 	//private variables
-	int _id;
+	private int _id;
 	private String _title;
-    private String _content;
+    private String _content = "";
     private String _created;
     private String _modified;
 	

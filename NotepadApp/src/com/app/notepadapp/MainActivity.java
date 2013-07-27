@@ -1,77 +1,100 @@
 package com.app.notepadapp;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.*;
 import android.widget.Toast;
 
-//implement the OnClickListener interface
-public class MainActivity extends Activity 
+import java.util.Date;
+import java.util.List;
+
+public class MainActivity extends Activity
 	implements OnClickListener {
 
     private TableLayout NOTES_LIST;
-    private int NOTES_COUNT;
-    private DatabaseHandler NOTES_DB;
+    private int NOTES_COUNT = 0;
+    private SharedPreferences NOTES_DB;
+    private DatabaseHandler DB_HANDLER;
+    private static final String DB_NAME = "MyNotes";
 
-    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
 
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.main);
-        
-        //create DB
-        DatabaseHandler db = new DatabaseHandler(this);
-        NOTES_DB = db;
-    	//get the Button reference
-    	//Button is a subclass of View 
-    	//buttonClick if from main.xml "@+id/addButton"
+
         View btnClick = findViewById(R.id.addButton);
         btnClick.setOnClickListener(this);
 
-        TableLayout tl = (TableLayout) findViewById(R.id.notesList);
+        NOTES_LIST = (TableLayout) findViewById(R.id.notesList);
 
-        NOTES_LIST = tl;
+        NOTES_DB = getSharedPreferences(DB_NAME, 0);
+        DB_HANDLER = new DatabaseHandler(NOTES_DB);
+        NOTES_COUNT = DB_HANDLER.getNotesCount();
 
-        //set event listener
+        buildList();
+
+        Toast.makeText(getBaseContext(), "Notes: " +  NOTES_COUNT , Toast.LENGTH_LONG).show();
+
     }
 
-    //override the OnClickListener interface method
+    private void buildList() {
+
+        List<ContentHandler> notesList =  DB_HANDLER.getAllNotes();
+
+        for(int i = 0; i < NOTES_COUNT; i ++){
+
+            Button newNote = new Button(this);
+
+            newNote.setId(notesList.get(i).getID());
+            newNote.setText(notesList.get(i).getTitle());
+
+            newNote.setOnClickListener(this);
+
+            NOTES_LIST.addView(newNote);
+
+        }
+    }
+
 	@Override
 	public void onClick(View arg0) {
 		if(arg0.getId() == R.id.addButton){
-			//define a new Intent for the second Activity
+
 			Intent intent = new Intent(this,newNoteActivity.class);
 
-            Button tv = new Button(this);
-            tv.setText("Dynamic layouts ftw!");
-            tv.setId(NOTES_COUNT);
-            tv.setOnClickListener(this);
+            Button newNote = new Button(this);
+            newNote.setId(NOTES_COUNT);
+            newNote.setOnClickListener(this);
 
-            ContentHandler note = new ContentHandler(NOTES_COUNT,"New note" + (NOTES_COUNT + 1), "" , "test" , "test");
-            NOTES_DB.addNote(note);
-
-            NOTES_LIST.addView(tv);
-
-            //System.out.print("test");
+            Date date = new Date();
+            ContentHandler note = new ContentHandler(NOTES_COUNT,"New note " + (NOTES_COUNT + 1), "" , date.toString() , date.toString());
+            DB_HANDLER.addNote(note);
 
             NOTES_COUNT = NOTES_COUNT + 1;
-            //Toast.makeText(getBaseContext(), "Notes: " + NOTES_COUNT, Toast.LENGTH_LONG).show();
 
-            //this.startActivity(intent);
+            intent.putExtra("editNoteId",note.getID());
+            intent.putExtra("editMode",0);
 
-            //Toast.makeText(getBaseContext(), "Clicked " + arg0.getId(), Toast.LENGTH_LONG).show();
+            this.startActivity(intent);
 
 
-                //c.moveToNext();
             } else {
 
             Intent intent = new Intent(this,newNoteActivity.class);
             intent.putExtra("editNoteId",arg0.getId());
+            intent.putExtra("editMode",1);
+
             this.startActivity(intent);
 
             }
