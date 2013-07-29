@@ -51,7 +51,7 @@
 	    android:layout_height="wrap_content"
 	    android:stretchColumns="0" >
 
-	    <TableRow>
+
 
 	        <EditText
 	            android:id="@+id/NoteTitle"
@@ -59,9 +59,6 @@
 	            android:layout_height="wrap_content"
 	            android:gravity="center_horizontal" />
 
-	        <FrameLayout>
-	        </FrameLayout>
-	    </TableRow>
 	</TableLayout>
 
 

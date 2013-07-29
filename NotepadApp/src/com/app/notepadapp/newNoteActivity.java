@@ -19,6 +19,7 @@ public class newNoteActivity extends Activity
     private SharedPreferences.Editor NOTES_DB_EDITOR;
     private DatabaseHandler DB_HANDLER;
     private ContentHandler NOTE;
+    private int NOTE_ID;
     private static final String DB_NAME = "MyNotes";
 
 
@@ -34,7 +35,6 @@ public class newNoteActivity extends Activity
 
         this.setContentView(R.layout.newnote);
 
-        int editNoteID;
         EditText noteTitle = (EditText) findViewById(R.id.NoteTitle);
         EditText noteContent = (EditText) findViewById(R.id.NoteContent);
 
@@ -43,9 +43,9 @@ public class newNoteActivity extends Activity
         DB_HANDLER = new DatabaseHandler(NOTES_DB);
 
         Bundle extras = getIntent().getExtras();
-        editNoteID = extras.getInt("editNoteId");
+        NOTE_ID = extras.getInt("editNoteId");
 
-        ContentHandler NOTE =  DB_HANDLER.getNote(editNoteID);
+        ContentHandler NOTE =  DB_HANDLER.getNote(NOTE_ID);
 
         findViewById(R.id.saveNote).setOnClickListener(this);
         findViewById(R.id.backNote).setOnClickListener(this);
@@ -63,11 +63,21 @@ public class newNoteActivity extends Activity
     public void onClick(View arg0) {
         if(arg0.getId() == R.id.saveNote){
             //define a new Intent for the second Activity
-            Intent intent = new Intent(this,MainActivity.class);
+
+            //
+
+            EditText noteTitle = (EditText) findViewById(R.id.NoteTitle);
+            EditText noteContent = (EditText) findViewById(R.id.NoteContent);
+
+            Toast.makeText(getBaseContext(), noteTitle.getText().toString() + " has been saved"  , Toast.LENGTH_LONG).show();
+
+            DB_HANDLER.updateNote(NOTE_ID, noteTitle.getText().toString() , noteContent.getText().toString());
+
+            //Intent intent = new Intent(this,MainActivity.class);
 
 
             //start the second Activity
-            this.startActivity(intent);
+            //this.startActivity(intent);
         }
 
         if(arg0.getId() == R.id.backNote){
@@ -81,9 +91,13 @@ public class newNoteActivity extends Activity
 
         if(arg0.getId() == R.id.deleteNote){
 
-            //DB_HANDLER.deleteNote(NOTE.getID());
-            Toast.makeText(getBaseContext(), "Deleted" , Toast.LENGTH_LONG).show();
+            DB_HANDLER.deleteNote(NOTE_ID);
+            //Toast.makeText(getBaseContext(), "Deleted" , Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this,MainActivity.class);
 
+            //DB_HANDLER.updateNote(NOTE);
+            //start the second Activity
+            this.startActivity(intent);
             //TableLayout noteEditPanel = (TableLayout) findViewById(R.id.editPanel);
             //noteEditPanel.setVisibility(1);
 

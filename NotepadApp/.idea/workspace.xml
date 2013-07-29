@@ -28,17 +28,19 @@
     <ignored path="NotepadApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/testTextFile.txt" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374753758097" ignored="false" />
-    <file path="/fragment.java" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374754628615" ignored="false" />
-    <file path="/newNoteActivity.java" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374949630835" ignored="false" />
+    <file path="/fragment.java" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1375103021967" ignored="false" />
+    <file path="/newNoteActivity.java" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1375105329087" ignored="false" />
     <file path="$PROJECT_DIR$/../../CreateDB/src/com/app/createdb/MainActivity.java" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374755685774" ignored="false" />
     <file path="/newnote.xml" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374949552253" ignored="false" />
-    <file path="/Dummy.txt" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374768964466" ignored="false" />
+    <file path="/Dummy.txt" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1375114233711" ignored="false" />
     <file path="/note.xml" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374759212586" ignored="false" />
-    <file path="/main.xml" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374759383856" ignored="false" />
-    <file path="/MainActivity.java" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374937258482" ignored="false" />
+    <file path="/main.xml" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1375110916797" ignored="false" />
+    <file path="/MainActivity.java" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1375122483672" ignored="false" />
     <file path="/ContentHandler.java" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374931940974" ignored="false" />
-    <file path="/DatabaseHandler.java" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374948358513" ignored="false" />
+    <file path="/DatabaseHandler.java" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1375120705574" ignored="false" />
     <file path="/a.xml" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1374937946983" ignored="false" />
+    <file path="/SortDialog.java" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1375113726604" ignored="false" />
+    <file path="/sortmenu.xml" changelist="fec1306f-9b45-4b4f-b499-fb0851209cd0" time="1375114287067" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,10 +101,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DatabaseHandler.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/app/notepadapp/DatabaseHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="39" selection-start="532" selection-end="532" vertical-scroll-proportion="0.6607774">
+            <state line="98" column="75" selection-start="3061" selection-end="3061" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,11 +112,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/app/notepadapp/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="20" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="273" column="72" selection-start="9988" selection-end="9988" vertical-scroll-proportion="0.69964665">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#8163#8817#0" expanded="true" />
+                <element signature="e#8790#8791#0" expanded="true" />
+                <element signature="e#8876#9530#0" expanded="true" />
+                <element signature="e#9503#9504#0" expanded="true" />
+                <element signature="e#9590#10238#0" expanded="true" />
+                <element signature="e#10211#10212#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,7 +132,7 @@
       <file leaf-file-name="newNoteActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/app/notepadapp/newNoteActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="12" selection-start="2716" selection-end="2787" vertical-scroll-proportion="0.0">
+            <state line="80" column="43" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,7 +143,7 @@
       <file leaf-file-name="ContentHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/app/notepadapp/ContentHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="31" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+            <state line="9" column="29" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,7 +152,7 @@
       <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="1040" selection-end="1040" vertical-scroll-proportion="-7.82">
+            <state line="18" column="0" selection-start="558" selection-end="558" vertical-scroll-proportion="-6.12">
               <folding />
             </state>
           </provider>
@@ -154,7 +164,7 @@
       <file leaf-file-name="newnote.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/newnote.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="39" selection-start="477" selection-end="477" vertical-scroll-proportion="-4.76">
+            <state line="17" column="67" selection-start="630" selection-end="630" vertical-scroll-proportion="-4.76">
               <folding />
             </state>
           </provider>
@@ -174,15 +184,18 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/testTextFile.txt" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/layout/note.xml" />
         <option value="$PROJECT_DIR$/res/layout/updatenote.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/app/notepadapp/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/app/notepadapp/ContentHandler.java" />
         <option value="$PROJECT_DIR$/res/layout/newnote.xml" />
-        <option value="$PROJECT_DIR$/src/com/app/notepadapp/newNoteActivity.java" />
+        <option value="$PROJECT_DIR$/res/menu/main.xml" />
+        <option value="$PROJECT_DIR$/res/layout/sortmenu.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/com/app/notepadapp/SortDialog.java" />
         <option value="$PROJECT_DIR$/src/com/app/notepadapp/DatabaseHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/app/notepadapp/newNoteActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/app/notepadapp/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -267,24 +280,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotepadApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotepadApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -298,6 +293,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.sourceCode.XML" />
     <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
@@ -458,7 +454,7 @@
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
+      <option name="PREFERRED_AVD" value="test2" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
       <option name="WIPE_USER_DATA" value="false" />
@@ -633,9 +629,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/newnote.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="67" selection-start="630" selection-end="630" vertical-scroll-proportion="-4.76">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="29" selection-start="254" selection-end="254" vertical-scroll-proportion="0.28280962">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1040" selection-end="1040" vertical-scroll-proportion="-7.82">
+        <state line="18" column="0" selection-start="558" selection-end="558" vertical-scroll-proportion="-6.12">
           <folding />
         </state>
       </provider>
@@ -645,42 +658,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/app/notepadapp/ContentHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+        <state line="9" column="29" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/newnote.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/app/notepadapp/DatabaseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="477" selection-end="477" vertical-scroll-proportion="-4.76">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/app/notepadapp/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="20" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/app/notepadapp/newNoteActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="12" selection-start="2716" selection-end="2787" vertical-scroll-proportion="0.0">
+        <state line="98" column="75" selection-start="3061" selection-end="3061" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/app/notepadapp/DatabaseHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/app/notepadapp/newNoteActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="39" selection-start="532" selection-end="532" vertical-scroll-proportion="0.6607774">
+        <state line="80" column="43" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/app/notepadapp/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="273" column="72" selection-start="9988" selection-end="9988" vertical-scroll-proportion="0.69964665">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8163#8817#0" expanded="true" />
+            <element signature="e#8790#8791#0" expanded="true" />
+            <element signature="e#8876#9530#0" expanded="true" />
+            <element signature="e#9503#9504#0" expanded="true" />
+            <element signature="e#9590#10238#0" expanded="true" />
+            <element signature="e#10211#10212#0" expanded="true" />
           </folding>
         </state>
       </provider>

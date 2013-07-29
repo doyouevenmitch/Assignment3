@@ -1,6 +1,7 @@
     package com.app.notepadapp;
 
     import java.util.ArrayList;
+    import java.util.Date;
     import java.util.List;
 
     import android.content.SharedPreferences;
@@ -10,24 +11,37 @@
     private SharedPreferences NOTES_DB;
     private SharedPreferences.Editor NOTES_DB_EDITOR;
     private int NOTES_COUNT;
+    private String SORT_METHOD;
 
 	public DatabaseHandler(SharedPreferences db) {
 
         NOTES_DB = db;
         NOTES_DB_EDITOR = NOTES_DB.edit();
         NOTES_COUNT = NOTES_DB.getInt("notesCount", 0);
+        SORT_METHOD = NOTES_DB.getString("sortMethod", "normal");
 
 	}
 
+    public void setSortMethod(String sortMethod){
+        SORT_METHOD = sortMethod;
+        NOTES_DB_EDITOR.putString("sortMethod", sortMethod);
+
+        NOTES_DB_EDITOR.commit();
+    }
+
+    public String getSortMethod(){
+        return SORT_METHOD;
+    }
+
 	// Adding new note
-	void addNote(ContentHandler note) {
+	public void addNote(ContentHandler note) {
 
         int noteID = note.getID();
 
         NOTES_DB_EDITOR.putInt("notesCount", NOTES_COUNT + 1);
         NOTES_DB_EDITOR.putString("noteTitle_" + noteID, note.getTitle());
         NOTES_DB_EDITOR.putString("noteContent_" + noteID, note.getContent());
-        NOTES_DB_EDITOR.putString("noteDateCreated_" + noteID, note.getCreated());
+        NOTES_DB_EDITOR.putString("noteDateCreated_" + noteID, note.getCreated() );
         NOTES_DB_EDITOR.putString("noteDateModified_" + noteID, note.getModified());
 
         NOTES_DB_EDITOR.commit();
@@ -75,14 +89,14 @@
 	}
 
 	// Updating single note
-    void updateNote(ContentHandler note) {
+    public void updateNote(int id,String title,String content) {
 
-        int noteID = note.getID();
+        int noteID = id;
+        Date date = new Date();
 
-        NOTES_DB_EDITOR.putString("noteTitle_" + noteID, note.getTitle());
-        NOTES_DB_EDITOR.putString("noteContent_" + noteID, note.getContent());
-        NOTES_DB_EDITOR.putString("noteDateCreated_" + noteID, note.getCreated());
-        NOTES_DB_EDITOR.putString("noteDateModified_" + noteID, note.getModified());
+        NOTES_DB_EDITOR.putString("noteTitle_" + noteID, title);
+        NOTES_DB_EDITOR.putString("noteContent_" + noteID, content);
+        NOTES_DB_EDITOR.putString("noteDateModified_" + noteID, date.toString() );
 
         NOTES_DB_EDITOR.commit();
 
