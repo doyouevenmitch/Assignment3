@@ -1,7 +1,19 @@
+/**
+ * This class is part of the Noteapp android application, providing basic note-taking functionality.
+ * This application is an assignment 3 of the Mobility subject in Bond University.
+ *
+ * Developed by "The Alan Turings" group.
+ */
+
 package com.app.notepadapp;
 
 public class ContentHandler {
-	
+    /**
+     * This class describes format of the note for noteapp to work with.
+     * Provide set of getter and setter methods.
+     */
+
+
 	//private variables
 	private int _id;
 	private String _title;

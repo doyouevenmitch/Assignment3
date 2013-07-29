@@ -3,8 +3,6 @@
 	android:orientation="vertical" android:layout_width="fill_parent"
 	android:layout_height="fill_parent">
 
-
-
     <LinearLayout
             android:id="@+id/editNewNote"
             android:layout_width="fill_parent"
@@ -19,6 +17,7 @@
                 android:layout_height="wrap_content"
                 android:text="  Delete">
         </Button>
+
         <Button
                 android:id="@+id/backNote" android:drawableLeft="@drawable/back"
                 android:textSize="20sp"
@@ -26,7 +25,6 @@
                 android:layout_height="wrap_content"
                 android:text="Back">
         </Button>
-
 
     </LinearLayout>
 
@@ -36,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dip"
             android:stretchColumns="1">
+
         <Button
                 android:id="@+id/saveNote"
                 android:layout_width="fill_parent"
@@ -44,14 +43,13 @@
                 android:drawableLeft="@drawable/save"
                 android:text="Save" >
         </Button>
+
     </TableLayout>
 
 	<TableLayout
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:stretchColumns="0" >
-
-
 
 	        <EditText
 	            android:id="@+id/NoteTitle"
@@ -60,7 +58,6 @@
 	            android:gravity="center_horizontal" />
 
 	</TableLayout>
-
 
 	<TextView
 	    android:layout_width="fill_parent"
@@ -73,6 +70,7 @@
 	    android:layout_height="fill_parent" 
 	    android:layout_weight="2"
 		android:orientation="horizontal">
+
 		<EditText
 		    android:gravity="top"
 		    android:id="@+id/NoteContent"
@@ -82,10 +80,7 @@
 			android:padding="10sp" 
 			android:layout_height="fill_parent">
 		</EditText>
+
 	</LinearLayout>
-	
-	
-
-
 
 </LinearLayout>
