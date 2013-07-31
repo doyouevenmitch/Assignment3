@@ -54,8 +54,8 @@ public final class R {
         public static final int NoteTitle=0x7f080009;
         public static final int action_settings=0x7f08000c;
         public static final int addButton=0x7f080000;
-        public static final int backNote=0x7f080006;
-        public static final int deleteNote=0x7f080005;
+        public static final int backNote=0x7f080005;
+        public static final int deleteNote=0x7f080006;
         public static final int editNewNote=0x7f080004;
         public static final int listNotes=0x7f080002;
         public static final int name=0x7f08000b;
@@ -95,7 +95,12 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060001;
+        public static final int AppBaseTheme=0x7f060002;
+        /**  Note there is no sign of a buttonSyle command in eclipse, yet simplye 'button' will not implement 
+         */
         public static final int AppTheme=0x7f060000;
+        /**  For buttons only, across the application 
+         */
+        public static final int titleButton=0x7f060001;
     }
 }

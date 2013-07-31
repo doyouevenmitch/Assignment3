@@ -4,27 +4,32 @@
 	android:layout_height="fill_parent">
 
     <LinearLayout
-            android:id="@+id/editNewNote"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dip">
+        android:id="@+id/editNewNote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip" >
 
         <Button
-                android:id="@+id/deleteNote"
-                android:drawableLeft="@drawable/delete"
-                android:layout_width="wrap_content"
-                android:textSize="20sp"
-                android:layout_height="wrap_content"
-                android:text="  Delete">
-        </Button>
+            android:id="@+id/backNote"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/back"
+            android:text=" Back"
+            android:textSize="20sp" />
 
         <Button
-                android:id="@+id/backNote" android:drawableLeft="@drawable/back"
-                android:textSize="20sp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Back">
-        </Button>
+            android:id="@+id/deleteNote"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/delete"
+            android:text=" Delete"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -36,12 +41,16 @@
             android:stretchColumns="1">
 
         <Button
-                android:id="@+id/saveNote"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:drawableLeft="@drawable/save"
-                android:text="Save" >
+            android:id="@+id/saveNote"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/save"
+            android:text=" Save" >
+
         </Button>
 
     </TableLayout>
@@ -55,7 +64,9 @@
 	            android:id="@+id/NoteTitle"
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
-	            android:gravity="center_horizontal" />
+	            android:layout_margin="2dp"
+	            android:gravity="center_horizontal" 
+	        	/>
 
 	</TableLayout>
 

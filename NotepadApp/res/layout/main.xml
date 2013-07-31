@@ -5,36 +5,41 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dip">
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip" 
+        >
 
         <Button
-                android:id="@+id/addButton"
-                android:drawableLeft="@drawable/add"
-                android:layout_width="wrap_content"
-                android:textSize="23sp"
-                android:layout_height="wrap_content"
-                android:text=" New note ">
+            android:id="@+id/addButton"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/add"
+            android:text=" New note " >
         </Button>
 
         <Button
-                android:id="@+id/sortButton" android:drawableLeft="@drawable/export"
-                android:textSize="23sp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-
-                android:text="Sort">
-        </Button>
-
+            android:id="@+id/sortButton"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/export"
+            android:text="Sort notes " />
     </LinearLayout>
 
     <ScrollView
-            android:id="@+id/listNotes"
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="2"
-            android:orientation="vertical" >
+        android:id="@+id/listNotes"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
 
         <TableLayout android:id="@+id/notesList"
                      xmlns:android="http://schemas.android.com/apk/res/android"
