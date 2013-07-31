@@ -36,18 +36,21 @@ public final class R {
         public static final int notebg=0x7f02000c;
         public static final int notebg2=0x7f02000d;
         public static final int notebg3=0x7f02000e;
-        public static final int notebg4=0x7f02000f;
-        public static final int notebg4blurr=0x7f020010;
-        public static final int notebg5=0x7f020011;
-        public static final int notebg5blurr=0x7f020012;
-        public static final int options=0x7f020013;
-        public static final int photos=0x7f020014;
-        public static final int picture=0x7f020015;
-        public static final int save=0x7f020016;
-        public static final int search=0x7f020017;
-        public static final int synced=0x7f020018;
-        public static final int tag=0x7f020019;
-        public static final int unsynced=0x7f02001a;
+        public static final int notebg3dark=0x7f02000f;
+        public static final int notebg3dark2=0x7f020010;
+        public static final int notebg4=0x7f020011;
+        public static final int notebg4blurr=0x7f020012;
+        public static final int notebg4dark=0x7f020013;
+        public static final int notebg5=0x7f020014;
+        public static final int notebg5blurr=0x7f020015;
+        public static final int options=0x7f020016;
+        public static final int photos=0x7f020017;
+        public static final int picture=0x7f020018;
+        public static final int save=0x7f020019;
+        public static final int search=0x7f02001a;
+        public static final int synced=0x7f02001b;
+        public static final int tag=0x7f02001c;
+        public static final int unsynced=0x7f02001d;
     }
     public static final class id {
         public static final int NoteContent=0x7f08000a;

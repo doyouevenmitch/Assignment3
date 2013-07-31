@@ -18,7 +18,7 @@
             android:layout_marginRight="2dp"
             android:layout_weight="1"
             android:drawableLeft="@drawable/add"
-            android:text=" New note " >
+            android:text=" New Note" >
         </Button>
 
         <Button
@@ -29,7 +29,7 @@
             android:layout_marginLeft="3dp"
             android:layout_weight="1"
             android:drawableLeft="@drawable/export"
-            android:text="Sort notes " />
+            android:text="Sort Notes" />
     </LinearLayout>
 
     <ScrollView
@@ -37,12 +37,11 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_marginBottom="5dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="2"
         android:orientation="vertical" >
 
         <TableLayout android:id="@+id/notesList"
-                     xmlns:android="http://schemas.android.com/apk/res/android"
                      android:orientation="vertical" android:layout_width="fill_parent"
                      android:layout_height="wrap_content" android:stretchColumns="0"
                      android:padding="3dip">
