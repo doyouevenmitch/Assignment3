@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
+<!--  Mobility Assignment 3, Bond univeristy, 2013
+	By Jesse Wheeler, Roman Yakobnyuk, Mitch Hall and Andreas L 
+	
+	A note-taking app for android, stylised for Nexus S and Nexus 4
+	Creation, deletion, sorting, editing
+	Managed from a central, modern styled "AppTheme"
+	Adapting to both portrait and landscape use dynamically ("wrapping content").
+	-->
+
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.app.notepadapp"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="8"
         android:targetSdkVersion="18" />
 
+    <!-- Code for supporting Nexus S and Nexus 7  -->
+    <supports-screens  	 android:normalScreens="true"  
+        				 android:largeScreens="true"
+         				 android:anyDensity="true" 
+         				 />
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"

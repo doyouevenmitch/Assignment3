@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+	<!-- Some text is hardcoded for styling ie between the images and text. Tried making it work :< -->
     <string name="app_name">NotepadApp</string>
     <string name="action_settings">Settings</string>
     <string name="addNote">New Note</string>
@@ -9,5 +9,6 @@
     <string name="update">Update</string>
     <string name="note">Note</string>
     <string name="title">Title</string>
+    <string name="sort_note">Sort Notes</string>
 
 </resources>

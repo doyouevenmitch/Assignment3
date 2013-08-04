@@ -1,8 +1,35 @@
-<resources>
 
     <!--
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw600dp devices (e.g. 7" tablets) here.
+         
+         NEXUS 7 STYLES
     -->
 
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <style name="AppTheme" parent="android:Theme.Holo.NoActionBar">
+	    <item name="android:windowBackground">@drawable/notebg4dark7</item>
+	    <item name="android:buttonStyle">@style/titleButton</item>
+	    <item name="android:textSize">15sp</item>
+
+	    <!-- Note there is no sign of a buttonSyle command in eclipse, yet simplye 'button' will not implement -->
+    </style>
+    
+    <!-- For buttons only, across the application
+    	NB: Serious styling issue revolved around making each note a button. 
+    	This became very tricky to style. -->
+    
+     <style name="titleButton" >
+	     <item name="android:typeface">serif</item>
+		 <item name="android:textSize">44sp</item>
+		 <item name="android:background">#66000000</item>
+ 	     <item name="android:layout_gravity">center</item> 
+         <item name="android:paddingTop">10dp</item>
+         <item name="android:paddingLeft">10dp</item>
+         <item name="android:paddingBottom">8dp</item>
+	 </style>
+
+
 </resources>
+

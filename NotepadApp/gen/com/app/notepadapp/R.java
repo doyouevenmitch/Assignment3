@@ -33,24 +33,16 @@ public final class R {
         public static final int ic_launcher=0x7f020009;
         public static final int icon=0x7f02000a;
         public static final int more=0x7f02000b;
-        public static final int notebg=0x7f02000c;
-        public static final int notebg2=0x7f02000d;
-        public static final int notebg3=0x7f02000e;
-        public static final int notebg3dark=0x7f02000f;
-        public static final int notebg3dark2=0x7f020010;
-        public static final int notebg4=0x7f020011;
-        public static final int notebg4blurr=0x7f020012;
-        public static final int notebg4dark=0x7f020013;
-        public static final int notebg5=0x7f020014;
-        public static final int notebg5blurr=0x7f020015;
-        public static final int options=0x7f020016;
-        public static final int photos=0x7f020017;
-        public static final int picture=0x7f020018;
-        public static final int save=0x7f020019;
-        public static final int search=0x7f02001a;
-        public static final int synced=0x7f02001b;
-        public static final int tag=0x7f02001c;
-        public static final int unsynced=0x7f02001d;
+        public static final int notebg4dark=0x7f02000c;
+        public static final int notebg4dark7=0x7f02000d;
+        public static final int options=0x7f02000e;
+        public static final int photos=0x7f02000f;
+        public static final int picture=0x7f020010;
+        public static final int save=0x7f020011;
+        public static final int search=0x7f020012;
+        public static final int synced=0x7f020013;
+        public static final int tag=0x7f020014;
+        public static final int unsynced=0x7f020015;
     }
     public static final class id {
         public static final int NoteContent=0x7f08000a;
@@ -76,14 +68,17 @@ public final class R {
         public static final int main=0x7f070000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int addNote=0x7f050002;
-        public static final int app_name=0x7f050000;
-        public static final int new_note=0x7f050003;
-        public static final int note=0x7f050006;
-        public static final int save=0x7f050004;
-        public static final int title=0x7f050007;
-        public static final int update=0x7f050005;
+        public static final int action_settings=0x7f060001;
+        public static final int addNote=0x7f060002;
+        /**  Some text is hardcoded for styling ie between the images and text. Tried making it work :< 
+         */
+        public static final int app_name=0x7f060000;
+        public static final int new_note=0x7f060003;
+        public static final int note=0x7f060006;
+        public static final int save=0x7f060004;
+        public static final int sort_note=0x7f060008;
+        public static final int title=0x7f060007;
+        public static final int update=0x7f060005;
     }
     public static final class style {
         /** 
@@ -98,12 +93,18 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060002;
+        public static final int AppBaseTheme=0x7f050002;
         /**  Note there is no sign of a buttonSyle command in eclipse, yet simplye 'button' will not implement 
+ Note there is no sign of a buttonSyle command in eclipse, yet simplye 'button' will not implement 
          */
-        public static final int AppTheme=0x7f060000;
-        /**  For buttons only, across the application 
+        public static final int AppTheme=0x7f050000;
+        /**  For buttons only, across the application
+    	NB: Serious styling issue revolved around making each note a button. 
+    	This became very tricky to style. 
+ For buttons only, across the application
+    	NB: Serious styling issue revolved around making each note a button. 
+    	This became very tricky to style. 
          */
-        public static final int titleButton=0x7f060001;
+        public static final int titleButton=0x7f050001;
     }
 }

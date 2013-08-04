@@ -13,7 +13,7 @@
             android:id="@+id/backNote"
             android:textStyle="bold"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_marginRight="2dp"
             android:layout_weight="1"
             android:drawableLeft="@drawable/back"
@@ -24,7 +24,7 @@
             android:id="@+id/deleteNote"
             android:textStyle="bold"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
             android:layout_weight="1"
             android:drawableLeft="@drawable/delete"
@@ -42,17 +42,15 @@
 
         <Button
             android:id="@+id/saveNote"
-            android:textStyle="bold"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="5dp"
-            android:paddingLeft="17dp"
             android:layout_weight="1"
             android:drawableLeft="@drawable/save"
-            android:text=" Save" 
-            >
-
+            android:paddingLeft="15dp"
+            android:text=" Save"
+            android:textStyle="bold" >
         </Button>
 
     </LinearLayout>
@@ -83,7 +81,7 @@
 
 	<LinearLayout 
 	    android:layout_width="fill_parent" 
-	    android:layout_height="fill_parent" 
+	    android:layout_height="0dp" 
 	    android:layout_weight="2"
 		android:orientation="horizontal">
 
@@ -91,7 +89,6 @@
 		    android:id="@+id/NoteContent"
 		    android:layout_width="fill_parent"
 		    android:layout_height="fill_parent"
-		    android:layout_weight="2"
 		    android:ems="10"
 		    android:gravity="top"
 		    android:padding="12sp"
